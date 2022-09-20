@@ -18,7 +18,6 @@ def dare(update: Update, context: CallbackContext):
     update.effective_message.reply_text(random.choice(truth_and_dare_string.DARE))
 
 @run_async
-acak = ["Kamu dapat truth, klik /truth", "Kamu dapat dare, klik /dare"]
 def truth(update: Update, context: CallbackContext):
     args = context.args
     update.effective_message.reply_text(random.choice(acak))
