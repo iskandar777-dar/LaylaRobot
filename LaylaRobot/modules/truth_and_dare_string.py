@@ -83,3 +83,8 @@ DARE = (
      "bilang sayang ke orang yang dios.",
     
 )
+
+ACAK = ( 
+        "Kamu dapat truth, klik /truth", 
+        "Kamu dapat dare, klik /dare" 
+)
