@@ -74,9 +74,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Layla
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
-Maintained by @HEROGAMERS1 ❤
+*Hello {} !*
+✪ I'm an somed management bot [✨](https://telegra.ph/file/ba582d379f2586f227d66.png)
+────────────────────────
+× *Uptime:* `{}`
+× `{}` *users, across* `{}` *chats.*
+────────────────────────
+✪ Hit /help to see my available commands.
 """
 
 buttons = [
@@ -103,15 +107,13 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Layla
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by :- [Awesome Bots](t.me/Laylalist)"""
+Click on the button bellow to get description about specifics command."""
 
-layla_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
+CILIK_IMG = "https://telegra.ph/file/ba582d379f2586f227d66.png"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Hero](t.me/HEROGAMERS1) \
- Supporting isnt always financial! [AwesomeSupport](t.me/LaylaList) \
+ You can support the project by contacting @kenapatagdar \
+ Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -357,19 +359,18 @@ def layla_about_callback(update, context):
     query = update.callback_query
     if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Layla*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Somed*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Bots @LaylaList
-                 \n❍ Support Group @AwesomeSupport
-                 \n❍ Assistant @LaylaAssistant.
-                 \nHere is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot).
-                 \n\nIf you have any question about Layla, let us know at .""",
+                 \n\n_Somed's licensed under the GNU General Public License v3.0_
+                 \n❍ Awesome Bots @kenapatagdar
+                 \n❍ Support Group @somedsupport
+                 \nHere is the [💾Repository](https://github.com/iskandar777-dar/LaylaRobot).
+                 \n\nIf you have any question about Somed, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -395,8 +396,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Layla*
-                 \nHere is the [Source Code](https://github.com/QueenArzoo/LaylaRobot) .""",
+            text=""" Hi..🤗 I'm *Somed*
+                 \nHere is the [Source Code](https://github.com/iskandar777-dar/LaylaRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
